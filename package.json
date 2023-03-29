@@ -1,0 +1,32 @@
+{
+  "name": "no-prisma-next-planetscale",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "yarn postinstall && next build",
+    "start": "next start",
+    "postinstall": "prisma generate",
+    "dbPush": "prisma db push ",
+    "dbStudio": "prisma studio ",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@planetscale/database": "^1.6.0",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.31",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "kysely": "^0.23.5",
+    "kysely-planetscale": "^1.3.0",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "@prisma/client": "^4.12.0",
+    "prisma": "^4.12.0"
+  }
+}
